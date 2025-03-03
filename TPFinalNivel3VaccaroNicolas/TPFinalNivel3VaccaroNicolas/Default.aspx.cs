@@ -21,5 +21,11 @@ namespace TPFinalNivel3VaccaroNicolas
                 repRepetidor.DataBind();    
             }
         }
+
+        protected void btnInfo_Click(object sender, EventArgs e)
+        {
+            var Id = ((Button)sender).CommandArgument;
+            Response.Redirect("InfoArticulo?Id=" + Id, false);
+        }
     }
 }

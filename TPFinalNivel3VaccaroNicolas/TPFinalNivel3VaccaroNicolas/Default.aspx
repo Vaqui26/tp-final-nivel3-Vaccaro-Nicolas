@@ -11,12 +11,12 @@
             <ItemTemplate>
                 <div class="col">
                     <div class="card">
-                        <img src="<%# Eval("UrlImagen")%>" class="card-img-top" alt="articulo.png" onerror="this.src='<%: this.ImagenNoEncontrada %>';">
+                        <img src="<%# Eval("UrlImagen")%>" class="card-img-top" alt="articulo.png" onerror="this.src='<%: this.ImagenNoEncontrada %>';" style="height:414px">
                         <div class="card-body">
                             <h5 class="card-title"><%# Eval("Nombre")%></h5>
                             <p class="card-text"><%# Eval("Descripcion")%></p>
-                            <asp:Button runat="server" ID="btnModificar" Text="Info" CommandArgument='<%#Eval("Id")%>' CommandName="ArticuloId"
-                                CssClass="btn btn-primary" />
+                            <asp:Button runat="server" ID="btnInfo" Text="Info" CommandArgument='<%#Eval("Id")%>' CommandName="ArticuloId"
+                                CssClass="btn btn-primary" OnClick="btnInfo_Click" />
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,45 @@
+﻿using NegocioBDD;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Objetos;
+
+namespace TPFinalNivel3VaccaroNicolas
+{
+    public partial class InfoArticulo : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack && Request.QueryString["Id"] != null)
+            {
+                
+                NegocioArticulo negocio = new NegocioArticulo();    
+                List<Articulo> lista = negocio.ListarArticulos();
+                Articulo art = lista.Find(x => x.Id == int.Parse(Request.QueryString["Id"].ToString()));
+
+                if (!(string.IsNullOrEmpty(art.UrlImagen))){
+                    imgArticulo.ImageUrl = art.UrlImagen;
+                }
+                txtCodigo.Text = art.Codigo;
+                txtCodigo.ReadOnly = true;  
+                txtNombre.Text = art.Nombre;
+                txtNombre.ReadOnly = true;  
+                txtDescripcion.Text = art.Descripcion;
+                txtDescripcion.ReadOnly = true; 
+                txtMarca.Text = art.Marca.Descripcion;
+                txtMarca.ReadOnly = true;
+                txtCategoria.Text = art.Categoria.Descripcion;
+                txtCategoria.ReadOnly = true;  
+                lblPrecio.Text = "$" + art.Precio;
+
+            }
+            else
+            {
+                Response.Redirect("Default", false);   
+            }
+        }
+    }
+}
