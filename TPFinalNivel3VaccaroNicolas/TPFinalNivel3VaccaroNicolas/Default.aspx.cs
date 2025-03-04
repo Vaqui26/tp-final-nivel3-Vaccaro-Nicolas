@@ -41,7 +41,7 @@ namespace TPFinalNivel3VaccaroNicolas
             }
             else
             {
-                ddlCriterio.Items.Add("Comienza con");
+                ddlCriterio.Items.Add("Empieza con");
                 ddlCriterio.Items.Add("Termina con");
                 ddlCriterio.Items.Add("Contiene");
             }
@@ -72,8 +72,14 @@ namespace TPFinalNivel3VaccaroNicolas
             txtFiltro.Text = "";
             ddlCriterio.Items.Clear();
             ddlCampo.SelectedIndex = 0;
-            filtroCampo = false ;
-            chkFiltro.Checked = false;  
+            if (filtroCampo)
+            {
+                ddlCampo.Enabled = true;
+                ddlCriterio.Enabled = true;
+                txtFiltro.Enabled = true;
+            }
+            filtroCampo = false;
+            chkFiltro.Checked = false;
         }
 
         protected void chkFiltro_CheckedChanged(object sender, EventArgs e)

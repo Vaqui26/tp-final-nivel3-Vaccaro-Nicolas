@@ -23,8 +23,22 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Perfil">Mi Perfil</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Favoritos">Mis Favoritos</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Administracion">Administracion</a></li>
                     </ul>
                 </div>
+            </div>
+            <div class="d-flex">
+                <%if (!NegocioBDD.Seguridad.sesionAbierta(Session["user"]))
+                    {%>
+                <a class="btn btn-success m-1" runat="server" href="~/Login">Login</a>
+                <a class="btn btn-outline-primary m-1" runat="server" href="~/Registrarse">Registrarse</a>
+                <%}else
+                   { %>
+                <asp:Button runat="server" ID="btnDesloguearse" CssClass="btn btn-danger me-2" Text="Salir" OnClick="btnDesloguearse_Click" />
+                <% } %>
+                <asp:Image runat="server" ID="ImgAvatar" Style="width: 35px; height: 35px; border-radius: 20px; margin-top: 5px; margin-right: 5px;" />
             </div>
         </nav>
         <div class="container body-content">

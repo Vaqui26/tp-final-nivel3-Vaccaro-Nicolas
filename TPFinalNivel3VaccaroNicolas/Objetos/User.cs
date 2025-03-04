@@ -16,18 +16,13 @@ namespace Objetos
         
         public string ImagenPerfil  { get; set; }
 
-        public TipoUsuario Tipo {  get; set; }  
+        public bool Admin {  get; set; }  
 
         public User(string email, string pass) {
             
             this.Email = email; 
             this.Pass = pass;
-            this.Tipo = TipoUsuario.Normal;
+            this.Admin = false;
         }   
-    }
-    public enum TipoUsuario
-    {
-        Normal = 1,
-        Admin = 2
     }
 }

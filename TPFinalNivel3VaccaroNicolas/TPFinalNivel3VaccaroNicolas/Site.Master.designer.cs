@@ -15,6 +15,24 @@ namespace TPFinalNivel3VaccaroNicolas
     {
 
         /// <summary>
+        /// Control btnDesloguearse.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDesloguearse;
+
+        /// <summary>
+        /// Control ImgAvatar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImgAvatar;
+
+        /// <summary>
         /// Control MainContent.
         /// </summary>
         /// <remarks>

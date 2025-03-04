@@ -46,7 +46,9 @@
     <Compile Include="NegocioArticulo.cs" />
     <Compile Include="NegocioCategoria.cs" />
     <Compile Include="NegocioMarca.cs" />
+    <Compile Include="NegocioUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Objetos\Objetos.csproj">
