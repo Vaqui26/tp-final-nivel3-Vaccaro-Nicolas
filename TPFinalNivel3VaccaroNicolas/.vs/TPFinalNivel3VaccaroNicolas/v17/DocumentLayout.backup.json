@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\tpfinalnivel3vaccaronicolas\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\tpfinalnivel3vaccaronicolas\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Site.Master",
+              "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\Site.Master",
+              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Site.Master",
+              "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-04T00:52:57.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -45,7 +62,7 @@
               "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\Default.aspx.cs",
               "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Default.aspx.cs",
               "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\Default.aspx.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAhwEgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T18:12:32.018Z",
               "EditorCaption": ""

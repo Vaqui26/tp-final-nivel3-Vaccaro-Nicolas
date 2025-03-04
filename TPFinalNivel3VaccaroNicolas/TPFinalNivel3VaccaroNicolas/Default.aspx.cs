@@ -11,11 +11,12 @@ namespace TPFinalNivel3VaccaroNicolas
     public partial class _Default : Page
     {
         public string ImagenNoEncontrada = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVsPEPP89yxMYU0Mvt9zTNl1wDzJRCiIDuQ&s";
-
+        public bool filtroCampo { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
+            filtroCampo = chkFiltro.Checked;
+            if (!IsPostBack){
+
                 NegocioArticulo negocio = new NegocioArticulo();
                 repRepetidor.DataSource = negocio.ListarArticulos();
                 repRepetidor.DataBind();
@@ -71,6 +72,31 @@ namespace TPFinalNivel3VaccaroNicolas
             txtFiltro.Text = "";
             ddlCriterio.Items.Clear();
             ddlCampo.SelectedIndex = 0;
+            filtroCampo = false ;
+            chkFiltro.Checked = false;  
+        }
+
+        protected void chkFiltro_CheckedChanged(object sender, EventArgs e)
+        {
+            filtroCampo = chkFiltro.Checked;
+            ddlCampo.Enabled = !chkFiltro.Checked;
+            ddlCriterio.Enabled = !chkFiltro.Checked;
+            txtFiltro.Enabled = !chkFiltro.Checked;
+        }
+
+        protected void btnFiltroAlt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                NegocioArticulo negocio = new NegocioArticulo();
+                repRepetidor.DataSource = negocio.filtrarPorCampos(ddlCampoAlt.SelectedItem.ToString(), ddlCategoriaAlt.SelectedValue.ToString());
+                repRepetidor.DataBind();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }

@@ -15,15 +15,6 @@ namespace TPFinalNivel3VaccaroNicolas
     {
 
         /// <summary>
-        /// Control SriptManager1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.ScriptManager SriptManager1;
-
-        /// <summary>
         /// Control ddlCampo.
         /// </summary>
         /// <remarks>
@@ -60,6 +51,33 @@ namespace TPFinalNivel3VaccaroNicolas
         protected global::System.Web.UI.WebControls.Button btnFiltro;
 
         /// <summary>
+        /// Control ddlCampoAlt.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCampoAlt;
+
+        /// <summary>
+        /// Control ddlCategoriaAlt.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCategoriaAlt;
+
+        /// <summary>
+        /// Control btnFiltroAlt.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFiltroAlt;
+
+        /// <summary>
         /// Control btnLimpiar.
         /// </summary>
         /// <remarks>
@@ -67,6 +85,15 @@ namespace TPFinalNivel3VaccaroNicolas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnLimpiar;
+
+        /// <summary>
+        /// Control chkFiltro.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkFiltro;
 
         /// <summary>
         /// Control repRepetidor.
