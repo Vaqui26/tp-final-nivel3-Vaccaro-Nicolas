@@ -21,6 +21,7 @@
             </div>
             <div class="mb-3">
                 <asp:Button runat="server" ID="btnGuardar" CssClass="btn btn-outline-primary" Text="Guardar" OnClick="btnGuardar_Click" />
+                <a href="Default.aspx" class="btn btn-outline-danger">Regresar</a>
             </div>
         </div>
         <div class="col-2"></div>
