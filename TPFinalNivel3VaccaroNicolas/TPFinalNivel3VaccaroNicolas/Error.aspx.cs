@@ -11,7 +11,7 @@ namespace TPFinalNivel3VaccaroNicolas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!(Session["error"] != null))
+            if (Session["error"] != null)
             {
                 lblError.Text = Session["error"].ToString();
             }
