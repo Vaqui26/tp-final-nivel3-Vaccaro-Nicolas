@@ -16,7 +16,8 @@ namespace TPFinalNivel3VaccaroNicolas
             {
                 NegocioArticulo negocio = new NegocioArticulo();
                 dvgArticulos.DataSource = negocio.ListarArticulos();
-                dvgArticulos.DataBind();    
+                dvgArticulos.DataBind();
+
             }
         }
 

@@ -3,6 +3,7 @@ using Objetos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -12,14 +13,21 @@ namespace TPFinalNivel3VaccaroNicolas
     public partial class FormularioArticulo : System.Web.UI.Page
     {
         public string UrlImagen { get; set; }
+        public bool Confirmacion { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
             try
             {
-                if (!IsPostBack && Seguridad.esAdmin(Session["user"]))
+                if (!Seguridad.esAdmin(Session["user"]))
                 {
+                    Session.Add("error", "Debe ser admin para entrar en esta pagina!");
+                    Response.Redirect("Error");
+                }
+                if (!IsPostBack)
+                {
+                    Confirmacion = false;
                     NegocioArticulo negocioArticulo = new NegocioArticulo();
                     NegocioMarca negocioMarca = new NegocioMarca();
                     NegocioCategoria negocioCategoria = new NegocioCategoria();
@@ -41,9 +49,9 @@ namespace TPFinalNivel3VaccaroNicolas
 
                 }
             }
+            catch (System.Threading.ThreadAbortException ex) { }
             catch (Exception ex)
             {
-
                 Session.Add("error", ex.Message);
                 Response.Redirect("Error", false);
             }
@@ -92,14 +100,14 @@ namespace TPFinalNivel3VaccaroNicolas
                 articuloNuevo.Precio = decimal.Parse(txtPrecio.Text);
 
                 string id = Request.QueryString["id"] != null ? Request.QueryString["id"] : "";
-                if( id == "")
+                if (id == "")
                 {
                     negocio.agregarNuevoArticulo(articuloNuevo);
                 }
                 else
                 {
                     articuloNuevo.Id = int.Parse(id);
-                    negocio.modificarArticulo(articuloNuevo);   
+                    negocio.modificarArticulo(articuloNuevo);
                 }
                 Response.Redirect("Default", false);
             }
@@ -108,6 +116,31 @@ namespace TPFinalNivel3VaccaroNicolas
 
                 Session.Add("error", ex.Message);
                 Response.Redirect("Error", false);
+            }
+        }
+
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Confirmacion = true;
+        }
+
+        protected void btnEliminarConfirmacion_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                NegocioArticulo negocio = new NegocioArticulo();    
+                if (chkConfirmacion.Checked)
+                {
+                    negocio.borrarArticulo(int.Parse(Request.QueryString["id"]));
+                    Response.Redirect("Default", false);
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                Session.Add("error", ex.Message);
+                Response.Redirect("Default", false);
             }
         }
     }

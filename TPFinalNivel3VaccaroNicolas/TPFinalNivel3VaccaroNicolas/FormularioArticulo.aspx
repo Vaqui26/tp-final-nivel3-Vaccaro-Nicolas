@@ -31,19 +31,27 @@
             </div>
             <div class="mb-3 pt-4">
                 <asp:Button runat="server" ID="btnAceptar" CssClass="btn btn-success me-2" OnClick="btnAceptar_Click" />
+                <a href="Default.aspx" class="btn btn-outline-dark">Regresar al home</a>
                 <% if (Request.QueryString["id"] != null)
-                   { %>
-                <asp:Button runat="server" ID="btnEliminar" CssClass="btn btn-danger me-2" Text="Eliminar" />
-                <asp:Button runat="server" ID="btnInactivar" CssClass="btn btn-warning" Text="Inactivar" />
+                    { %>
+                <asp:UpdatePanel runat="server" ID="updatePanerl1" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <asp:Button runat="server" ID="btnEliminar" Text="Eliminar" CssClass="btn btn-danger mt-2" OnClick="btnEliminar_Click" />
+                        <% if (Confirmacion)
+                            { %>
+                        <div class="mb-3 mt-2">
+                            <asp:CheckBox runat="server" ID="chkConfirmacion" Text="Confimar Eliminacion" CssClass="form-check-input" />
+                            <asp:Button runat="server" ID="btnEliminarConfirmacion" CssClass="btn btn-outline-danger" Text="Eliminar" OnClick="btnEliminarConfirmacion_Click" />
+                        </div>
+                        <% } %>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
                 <% } %>
-                <div>
-                    <a href="Default.aspx" class="btn btn-outline-dark mt-2">Regresar al home</a>
-                </div>
             </div>
         </div>
         <div class="col-1"></div>
         <div class="col-4">
-            <asp:UpdatePanel runat="server">
+            <asp:UpdatePanel runat="server" ID="updatePanerl2" UpdateMode="Conditional">
                 <ContentTemplate>
                     <div class="mb-3">
                         <label class="form-label">Imagen de Articulo</label>

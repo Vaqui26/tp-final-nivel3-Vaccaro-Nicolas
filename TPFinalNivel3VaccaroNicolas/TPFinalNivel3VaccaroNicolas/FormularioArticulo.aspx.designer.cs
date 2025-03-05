@@ -87,6 +87,15 @@ namespace TPFinalNivel3VaccaroNicolas
         protected global::System.Web.UI.WebControls.Button btnAceptar;
 
         /// <summary>
+        /// Control updatePanerl1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updatePanerl1;
+
+        /// <summary>
         /// Control btnEliminar.
         /// </summary>
         /// <remarks>
@@ -96,13 +105,31 @@ namespace TPFinalNivel3VaccaroNicolas
         protected global::System.Web.UI.WebControls.Button btnEliminar;
 
         /// <summary>
-        /// Control btnInactivar.
+        /// Control chkConfirmacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnInactivar;
+        protected global::System.Web.UI.WebControls.CheckBox chkConfirmacion;
+
+        /// <summary>
+        /// Control btnEliminarConfirmacion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEliminarConfirmacion;
+
+        /// <summary>
+        /// Control updatePanerl2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updatePanerl2;
 
         /// <summary>
         /// Control txtImagen.
