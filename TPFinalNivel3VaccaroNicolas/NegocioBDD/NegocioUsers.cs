@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace NegocioBDD
 {
@@ -69,5 +70,28 @@ namespace NegocioBDD
 				accesoDatos.cerrarConexion();
 			}
         }
+		public int registrarUser(User user)
+		{
+			ManejoBDD accesoDatos = new ManejoBDD();
+
+			try
+			{
+				accesoDatos.setearConsulta("Insert into USERS (email, pass) output inserted.Id values (@email, @pass);");
+				accesoDatos.setearParametros("@email", user.Email);
+				accesoDatos.setearParametros("@pass", user.Pass);
+
+				return accesoDatos.ejecutarAccionScalar();
+				
+			}
+			catch (Exception ex)
+			{
+
+				throw ex;
+			}
+			finally
+			{
+				accesoDatos.cerrarConexion();
+			}
+		}
 	}
 }
