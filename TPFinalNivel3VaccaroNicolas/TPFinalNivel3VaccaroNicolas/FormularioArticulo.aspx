@@ -30,9 +30,12 @@
                 </div>
             </div>
             <div class="mb-3 pt-4">
-                <asp:Button runat="server" ID="btnAceptar" CssClass="btn btn-success me-2" />
+                <asp:Button runat="server" ID="btnAceptar" CssClass="btn btn-success me-2" OnClick="btnAceptar_Click" />
+                <% if (Request.QueryString["id"] != null)
+                   { %>
                 <asp:Button runat="server" ID="btnEliminar" CssClass="btn btn-danger me-2" Text="Eliminar" />
                 <asp:Button runat="server" ID="btnInactivar" CssClass="btn btn-warning" Text="Inactivar" />
+                <% } %>
                 <div>
                     <a href="Default.aspx" class="btn btn-outline-dark mt-2">Regresar al home</a>
                 </div>

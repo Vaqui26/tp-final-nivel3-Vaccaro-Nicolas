@@ -36,7 +36,7 @@ namespace TPFinalNivel3VaccaroNicolas
                     ddlCategoria.DataValueField = "Id";
                     ddlCategoria.DataTextField = "Descripcion";
                     ddlCategoria.DataBind();
-                    
+
                     this.cargarArticulo(negocioArticulo);
 
                 }
@@ -71,7 +71,44 @@ namespace TPFinalNivel3VaccaroNicolas
 
         protected void txtImagen_TextChanged(object sender, EventArgs e)
         {
-            UrlImagen = txtImagen.Text; 
+            UrlImagen = txtImagen.Text;
+        }
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                NegocioArticulo negocio = new NegocioArticulo();
+                Articulo articuloNuevo = new Articulo();
+
+                articuloNuevo.Codigo = txtCodigo.Text;
+                articuloNuevo.Nombre = txtNombre.Text;
+                articuloNuevo.Descripcion = txtDescripcion.Text;
+                articuloNuevo.Marca = new Marca();
+                articuloNuevo.Marca.Id = int.Parse(ddlMarca.SelectedValue);
+                articuloNuevo.Categoria = new Categoria();
+                articuloNuevo.Categoria.Id = int.Parse(ddlCategoria.SelectedValue);
+                articuloNuevo.UrlImagen = txtImagen.Text;
+                articuloNuevo.Precio = decimal.Parse(txtPrecio.Text);
+
+                string id = Request.QueryString["id"] != null ? Request.QueryString["id"] : "";
+                if( id == "")
+                {
+                    negocio.agregarNuevoArticulo(articuloNuevo);
+                }
+                else
+                {
+                    articuloNuevo.Id = int.Parse(id);
+                    negocio.modificarArticulo(articuloNuevo);   
+                }
+                Response.Redirect("Default", false);
+            }
+            catch (Exception ex)
+            {
+
+                Session.Add("error", ex.Message);
+                Response.Redirect("Error", false);
+            }
         }
     }
 }
