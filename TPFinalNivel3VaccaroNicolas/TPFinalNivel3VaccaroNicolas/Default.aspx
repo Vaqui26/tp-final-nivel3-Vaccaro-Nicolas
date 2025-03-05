@@ -65,7 +65,7 @@
         <div class="col-3">
             <div class="mb-3 pt-4">
                 <label class="form-label">Filtrar :</label>
-                <asp:Button runat="server" ID="btnFiltroAlt" CssClass="btn btn-success" Text="Buscar" OnClick="btnFiltroAlt_Click"/>
+                <asp:Button runat="server" ID="btnFiltroAlt" CssClass="btn btn-success" Text="Buscar" OnClick="btnFiltroAlt_Click" />
             </div>
         </div>
     </div>
@@ -85,6 +85,10 @@
                             <p class="card-text"><%# Eval("Descripcion")%></p>
                             <asp:Button runat="server" ID="btnInfo" Text="Informacion del Articulo" CommandArgument='<%#Eval("Id")%>' CommandName="ArticuloId"
                                 CssClass="btn btn-primary" OnClick="btnInfo_Click" />
+                            <%if (NegocioBDD.Seguridad.esAdmin(Session["user"]))
+                                { %>
+                            <asp:Button runat="server" ID="btnModificar" Text="Modificar" CssClass="btn btn-success" />
+                               <% } %>
                         </div>
                     </div>
                 </div>

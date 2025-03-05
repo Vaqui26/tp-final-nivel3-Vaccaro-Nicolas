@@ -5,4 +5,16 @@
     <h2 class="h-2 pt-2">Lista de Articulos</h2>
     <hr />
 
+    <asp:GridView runat="server" ID="dvgArticulos" CssClass="table table-dark table-bordered text-center" AutoGenerateColumns="false"
+        OnSelectedIndexChanged="dvgArticulos_SelectedIndexChanged" DataKeyNames="Id">
+        <Columns>
+            <asp:BoundField HeaderText="Codigo" DataField="Codigo" />
+            <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
+            <asp:BoundField HeaderText="Marca" DataField="Marca.Descripcion" />
+            <asp:BoundField HeaderText="Categoria" DataField="Categoria.Descripcion" />
+            <asp:BoundField HeaderText="Precio" DataField="Precio" />
+            <asp:CommandField ShowSelectButton="true" SelectText="Seleccionar" HeaderText="Informacion" />
+        </Columns>
+    </asp:GridView>
+
 </asp:Content>

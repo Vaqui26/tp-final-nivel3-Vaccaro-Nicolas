@@ -14,7 +14,7 @@ namespace NegocioBDD
             User trainee = user != null ? (User)user : null;
             return trainee != null && trainee.Id != 0;
         }
-        static public bool esAdmin(User user)
+        static public bool esAdmin(Object user)
         {
             User trainee = user != null ? (User)user : null;
             return trainee != null ? trainee.Admin : false;

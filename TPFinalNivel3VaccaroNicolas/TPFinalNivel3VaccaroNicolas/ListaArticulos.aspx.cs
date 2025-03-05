@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NegocioBDD;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,18 @@ namespace TPFinalNivel3VaccaroNicolas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                NegocioArticulo negocio = new NegocioArticulo();
+                dvgArticulos.DataSource = negocio.ListarArticulos();
+                dvgArticulos.DataBind();    
+            }
+        }
+
+        protected void dvgArticulos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string id = dvgArticulos.SelectedDataKey.Value.ToString();
+            Response.Redirect("InfoArticulo?Id=" + id, false);
 
         }
     }
