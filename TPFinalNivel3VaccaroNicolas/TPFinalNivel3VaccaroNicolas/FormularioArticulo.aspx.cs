@@ -15,44 +15,63 @@ namespace TPFinalNivel3VaccaroNicolas
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+
+            try
             {
-                NegocioArticulo negocioArticulo = new NegocioArticulo();
-                NegocioMarca negocioMarca = new NegocioMarca();
-                NegocioCategoria negocioCategoria = new NegocioCategoria();
-
-                lblTitulo.Text = "Nuevo Producto";
-                btnAceptar.Text = "Agregar";
-
-                ddlMarca.DataSource = negocioMarca.listarMarca();
-                ddlMarca.DataValueField = "Id";
-                ddlMarca.DataTextField = "Descripcion";
-                ddlMarca.DataBind();
-
-                ddlCategoria.DataSource = negocioCategoria.listarCategoria();
-                ddlCategoria.DataValueField = "Id";
-                ddlCategoria.DataTextField = "Descripcion";
-                ddlCategoria.DataBind();
-
-                string id = Request.QueryString["id"] != null ? Request.QueryString["id"] : "";
-                if (id != "")
+                if (!IsPostBack && Seguridad.esAdmin(Session["user"]))
                 {
-                    Articulo articulo = (negocioArticulo.ListarArticulos(id))[0];
-                    lblTitulo.Text = "Modificacion del articulo " + articulo.Nombre;
-                    btnAceptar.Text = "Modificar";
+                    NegocioArticulo negocioArticulo = new NegocioArticulo();
+                    NegocioMarca negocioMarca = new NegocioMarca();
+                    NegocioCategoria negocioCategoria = new NegocioCategoria();
 
-                    txtCodigo.Text = articulo.Codigo;
-                    txtNombre.Text = articulo.Nombre;
-                    txtPrecio.Text = articulo.Precio.ToString();
-                    txtDescripcion.Text = articulo.Descripcion;
-                    UrlImagen = articulo.UrlImagen;
-                    txtImagen.Text = articulo.UrlImagen;
-                    ddlMarca.SelectedValue = articulo.Marca.Id.ToString();
-                    ddlCategoria.SelectedValue = articulo.Categoria.Id.ToString();  
+                    lblTitulo.Text = "Nuevo Producto";
+                    btnAceptar.Text = "Agregar";
+
+                    ddlMarca.DataSource = negocioMarca.listarMarca();
+                    ddlMarca.DataValueField = "Id";
+                    ddlMarca.DataTextField = "Descripcion";
+                    ddlMarca.DataBind();
+
+                    ddlCategoria.DataSource = negocioCategoria.listarCategoria();
+                    ddlCategoria.DataValueField = "Id";
+                    ddlCategoria.DataTextField = "Descripcion";
+                    ddlCategoria.DataBind();
+                    
+                    this.cargarArticulo(negocioArticulo);
 
                 }
+            }
+            catch (Exception ex)
+            {
+
+                Session.Add("error", ex.Message);
+                Response.Redirect("Error", false);
+            }
+        }
+        private void cargarArticulo(NegocioArticulo negocio)
+        {
+            string id = Request.QueryString["id"] != null ? Request.QueryString["id"] : "";
+            if (id != "")
+            {
+                Articulo articulo = (negocio.ListarArticulos(id))[0];
+                lblTitulo.Text = "Modificacion del articulo " + articulo.Nombre;
+                btnAceptar.Text = "Modificar";
+
+                txtCodigo.Text = articulo.Codigo;
+                txtNombre.Text = articulo.Nombre;
+                txtPrecio.Text = articulo.Precio.ToString();
+                txtDescripcion.Text = articulo.Descripcion;
+                UrlImagen = articulo.UrlImagen;
+                txtImagen.Text = articulo.UrlImagen;
+                ddlMarca.SelectedValue = articulo.Marca.Id.ToString();
+                ddlCategoria.SelectedValue = articulo.Categoria.Id.ToString();
 
             }
+        }
+
+        protected void txtImagen_TextChanged(object sender, EventArgs e)
+        {
+            UrlImagen = txtImagen.Text; 
         }
     }
 }

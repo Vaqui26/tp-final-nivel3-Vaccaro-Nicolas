@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormularioArticulo.aspx.cs" Inherits="TPFinalNivel3VaccaroNicolas.FormularioArticulo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ScriptManager runat="server" ID="scriptManager1"></asp:ScriptManager>
 
     <asp:Label runat="server" ID="lblTitulo" CssClass="h2"></asp:Label>
     <hr />
@@ -29,17 +30,26 @@
                 </div>
             </div>
             <div class="mb-3 pt-4">
-                <asp:Button runat="server" ID="btnAceptar" CssClass="btn btn-success" />
+                <asp:Button runat="server" ID="btnAceptar" CssClass="btn btn-success me-2" />
+                <asp:Button runat="server" ID="btnEliminar" CssClass="btn btn-danger me-2" Text="Eliminar" />
+                <asp:Button runat="server" ID="btnInactivar" CssClass="btn btn-warning" Text="Inactivar" />
+                <div>
+                    <a href="Default.aspx" class="btn btn-outline-dark mt-2">Regresar al home</a>
+                </div>
             </div>
         </div>
         <div class="col-1"></div>
         <div class="col-4">
-            <div class="mb-3">
-                <label class="form-label">Imagen de Articulo</label>
-                <asp:TextBox runat="server" ID="txtImagen" CssClass="form-control"></asp:TextBox>
-                <img src="<% = UrlImagen %>" alt="imagenArticulo" style="height: 250px; width: 100%;"
-                    onerror="this.src ='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVsPEPP89yxMYU0Mvt9zTNl1wDzJRCiIDuQ&s';" />
-            </div>
+            <asp:UpdatePanel runat="server">
+                <ContentTemplate>
+                    <div class="mb-3">
+                        <label class="form-label">Imagen de Articulo</label>
+                        <asp:TextBox runat="server" ID="txtImagen" CssClass="form-control" AutoPostBack="true" OnTextChanged="txtImagen_TextChanged"></asp:TextBox>
+                        <img src="<% = UrlImagen %>" alt="imagenArticulo" style="height: 250px; width: 100%;"
+                            onerror="this.src ='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVsPEPP89yxMYU0Mvt9zTNl1wDzJRCiIDuQ&s';" />
+                    </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
             <div class="mb-3">
                 <label for="txtDescripcion" class="form-label">Descripcion</label>
                 <asp:TextBox runat="server" ID="txtDescripcion" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
