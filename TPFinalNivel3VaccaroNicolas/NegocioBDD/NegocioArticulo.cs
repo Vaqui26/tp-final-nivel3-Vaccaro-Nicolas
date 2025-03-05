@@ -12,14 +12,18 @@ namespace NegocioBDD
     {
         private List<Articulo> lista = new List<Articulo>();
 
-        public List<Articulo> ListarArticulos()
+        public List<Articulo> ListarArticulos(string id = "")
         {   
 
             ManejoBDD accesoDatos = new ManejoBDD();
 
             try
             {
-                accesoDatos.setearConsulta("Select a.Id as ID,Codigo,Nombre,a.Descripcion as Desc_Articulo,IdMarca,m.descripcion as Desc_Marca,IdCategoria ,c.Descripcion as Desc_Categoria,ImagenUrl,Precio From ARTICULOS as a Join MARCAS as m On IdMarca = m.Id Join CATEGORIAS as c On IdCategoria = c.Id");
+                string consulta = "Select a.Id as ID,Codigo,Nombre,a.Descripcion as Desc_Articulo,IdMarca,m.descripcion as Desc_Marca,IdCategoria ,c.Descripcion as Desc_Categoria,ImagenUrl,Precio From ARTICULOS as a Join MARCAS as m On IdMarca = m.Id Join CATEGORIAS as c On IdCategoria = c.Id";
+                if(id != "")
+                    consulta += " where a.id = " + id;
+
+                accesoDatos.setearConsulta(consulta);
                 accesoDatos.ejecutarLectura();
 
                 while (accesoDatos.Lector.Read())

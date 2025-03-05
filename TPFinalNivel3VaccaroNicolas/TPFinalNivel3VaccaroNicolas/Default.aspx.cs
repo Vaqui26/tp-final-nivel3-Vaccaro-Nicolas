@@ -104,5 +104,11 @@ namespace TPFinalNivel3VaccaroNicolas
                 throw ex;
             }
         }
+
+        protected void btnModificar_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(((Button)sender).CommandArgument);
+            Response.Redirect("FormularioArticulo?Id=" + id, false);
+        }
     }
 }

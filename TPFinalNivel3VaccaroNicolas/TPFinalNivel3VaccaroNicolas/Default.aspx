@@ -87,7 +87,8 @@
                                 CssClass="btn btn-primary" OnClick="btnInfo_Click" />
                             <%if (NegocioBDD.Seguridad.esAdmin(Session["user"]))
                                 { %>
-                            <asp:Button runat="server" ID="btnModificar" Text="Modificar" CssClass="btn btn-success" />
+                            <asp:Button runat="server" ID="btnModificar" Text="Modificar" CssClass="btn btn-success" OnClick="btnModificar_Click" 
+                                CommandArgument='<%# Eval("Id") %>' CommandName="ArticuloId"/>
                                <% } %>
                         </div>
                     </div>

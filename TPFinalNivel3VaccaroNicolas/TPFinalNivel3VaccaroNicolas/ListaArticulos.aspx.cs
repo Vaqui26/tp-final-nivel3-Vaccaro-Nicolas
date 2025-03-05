@@ -23,7 +23,7 @@ namespace TPFinalNivel3VaccaroNicolas
         protected void dvgArticulos_SelectedIndexChanged(object sender, EventArgs e)
         {
             string id = dvgArticulos.SelectedDataKey.Value.ToString();
-            Response.Redirect("InfoArticulo?Id=" + id, false);
+            Response.Redirect("FormularioArticulo?Id=" + id, false);
 
         }
     }
