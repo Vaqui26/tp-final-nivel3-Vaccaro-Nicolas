@@ -1,4 +1,5 @@
 ﻿using NegocioBDD;
+using Objetos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,8 @@ namespace TPFinalNivel3VaccaroNicolas
             if (!IsPostBack)
             {
                 NegocioArticulo negocio = new NegocioArticulo();
-                dvgArticulos.DataSource = negocio.ListarArticulos();
+                Session.Add("listaArticulos", negocio.ListarArticulos());
+                dvgArticulos.DataSource = (List<Articulo>)Session["listaArticulos"];
                 dvgArticulos.DataBind();
 
             }
@@ -26,6 +28,37 @@ namespace TPFinalNivel3VaccaroNicolas
             string id = dvgArticulos.SelectedDataKey.Value.ToString();
             Response.Redirect("FormularioArticulo?Id=" + id, false);
 
+        }
+
+        protected void txtFiltro_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                List<Articulo> listaArticulos = (List<Articulo>)Session["listaArticulos"];
+                dvgArticulos.DataSource = listaArticulos.FindAll(x => x.Nombre.ToUpper().Contains(txtFiltro.Text.ToUpper()));
+                dvgArticulos.DataBind();
+            }
+            catch (Exception ex)
+            {
+
+                Session.Add("erro", ex.Message);
+                Response.Redirect("Error", false);
+            }
+        }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtFiltro.Text = "";
+                dvgArticulos.DataSource = (List<Articulo>)Session["listaArticulos"];
+                dvgArticulos.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Session.Add("erro", ex.Message);
+                Response.Redirect("Error", false);
+            }
         }
     }
 }

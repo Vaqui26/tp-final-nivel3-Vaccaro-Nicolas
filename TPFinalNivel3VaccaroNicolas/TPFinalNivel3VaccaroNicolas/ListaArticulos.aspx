@@ -5,13 +5,24 @@
     <h2 class="h-2 pt-2">Lista de Articulos</h2>
     <hr />
 
-    <%if (NegocioBDD.Seguridad.esAdmin(Session["user"])) 
-      { %>
+    <%if (NegocioBDD.Seguridad.esAdmin(Session["user"]))
+        { %>
     <div class="mb-3">
         <label class="form-label">Agregar Articulo :</label>
         <a href="FormularioArticulo.aspx" class="btn btn-outline-success">Nuevo</a>
     </div>
     <% }%>
+    <div class="row">
+        <div class="col-auto pt-1">
+            <label class="form-label">Buscar por Nombre :</label>
+        </div>
+        <div class="col-auto mb-3">
+            <asp:TextBox runat="server" ID="txtFiltro" CssClass="form-control" AutoPostBack="true" OnTextChanged="txtFiltro_TextChanged"></asp:TextBox>
+        </div>
+        <div class="col-auto mb-3">
+            <asp:Button runat="server" ID="btnLimpiar" CssClass="btn btn-warning" Text="Limpiar" OnClick="btnLimpiar_Click"/>
+        </div>
+    </div>
     <asp:GridView runat="server" ID="dvgArticulos" CssClass="table table-dark table-bordered text-center" AutoGenerateColumns="false"
         OnSelectedIndexChanged="dvgArticulos_SelectedIndexChanged" DataKeyNames="Id">
         <Columns>
