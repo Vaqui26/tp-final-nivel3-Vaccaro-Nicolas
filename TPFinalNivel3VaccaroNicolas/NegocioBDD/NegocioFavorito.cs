@@ -59,5 +59,55 @@ namespace NegocioBDD
                 accesoDatos.cerrarConexion();
             }
         }
+        public void agregarFavorito(int idUser, int idArticulo)
+        {
+            ManejoBDD accesoDatos = new ManejoBDD();    
+
+            try
+            {
+                accesoDatos.setearConsulta("insert into FAVORITOS values (@idUser,@idArticulo)");
+                accesoDatos.setearParametros("@idUser", idUser);
+                accesoDatos.setearParametros("@idArticulo", idArticulo);
+
+                accesoDatos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+        }
+        public bool verificarFavorito(int idUser, int idArticulo)
+        {
+            ManejoBDD accesoDatos = new ManejoBDD();
+
+            try
+            {
+                accesoDatos.setearConsulta("Select f.id From FAVORITOS as f join ARTICULOS as a on f.IdArticulo = a.Id join USERS as u on f.IdUser = u.Id where f.IdUser = @idUser and f.IdArticulo = @idArticulo;");
+                accesoDatos.setearParametros("@idUser", idUser);
+                accesoDatos.setearParametros("@idArticulo", idArticulo);
+
+                accesoDatos.ejecutarLectura();
+
+                while (accesoDatos.Lector.Read())
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+        }
     }
 }

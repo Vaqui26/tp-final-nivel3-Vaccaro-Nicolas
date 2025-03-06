@@ -36,9 +36,32 @@ namespace TPFinalNivel3VaccaroNicolas
                 lblPrecio.Text = "$" + art.Precio;
 
             }
-            else
+          
+        }
+
+        protected void btnFavorito_Click(object sender, EventArgs e)
+        {
+            try
             {
-                Response.Redirect("Default", false);   
+                NegocioFavorito negocio = new NegocioFavorito();
+                User user = (User)Session["user"];
+                int idArticulo = int.Parse(Request.QueryString["id"].ToString());
+                if (!negocio.verificarFavorito(user.Id, idArticulo))
+                {
+                    negocio.agregarFavorito(user.Id, idArticulo);
+                    lblFavorito.Text = "Articulo agregado con exito!!!";
+                }
+                else
+                {
+                    lblFavorito.Text = "Ya posees este Articulo en tus Favoritos!";
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                Session.Add("error", ex.Message);
+                Response.Redirect("Error", false);
             }
         }
     }
