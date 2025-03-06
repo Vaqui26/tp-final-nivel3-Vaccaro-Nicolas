@@ -20,11 +20,9 @@ namespace TPFinalNivel3VaccaroNicolas
 
             try
             {
-                if (!Seguridad.esAdmin(Session["user"]))
-                {
-                    Session.Add("error", "Debe ser admin para entrar en esta pagina!");
-                    Response.Redirect("Error");
-                }
+                this.RedirigirAlHome();
+                this.RedirigirSiNoEsAdmin();
+
                 if (!IsPostBack)
                 {
                     Confirmacion = false;
@@ -48,6 +46,8 @@ namespace TPFinalNivel3VaccaroNicolas
                     this.cargarArticulo(negocioArticulo);
 
                 }
+
+                
             }
             catch (System.Threading.ThreadAbortException ex) { }
             catch (Exception ex)
@@ -56,6 +56,24 @@ namespace TPFinalNivel3VaccaroNicolas
                 Response.Redirect("Error", false);
             }
         }
+
+        private void RedirigirSiNoEsAdmin()
+        {
+            if (!Seguridad.esAdmin(Session["user"]))
+            {
+                Session.Add("error", "Debe ser admin para entrar en esta pagina!");
+                Response.Redirect("Error");
+            }
+        }
+
+        private void RedirigirAlHome()
+        {
+            if (!Seguridad.sesionAbierta(Session["user"]))
+            {
+                Response.Redirect("Default");
+            }
+        }
+
         private void cargarArticulo(NegocioArticulo negocio)
         {
             string id = Request.QueryString["id"] != null ? Request.QueryString["id"] : "";

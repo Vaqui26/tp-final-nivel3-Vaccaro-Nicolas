@@ -51,6 +51,7 @@ namespace TPFinalNivel3VaccaroNicolas
                 user.Apellido = txtApellido.Text != "" ? txtApellido.Text : null;
 
                 negocio.actualizarUser(user);
+                Session["user"] = user;
                 Response.Redirect("Default", false);
             }
             catch (Exception ex)

@@ -5,6 +5,13 @@
     <h2 class="h-2 pt-2">Lista de Articulos</h2>
     <hr />
 
+    <%if (NegocioBDD.Seguridad.esAdmin(Session["user"])) 
+      { %>
+    <div class="mb-3">
+        <label class="form-label">Agregar Articulo :</label>
+        <a href="FormularioArticulo.aspx" class="btn btn-outline-success">Nuevo</a>
+    </div>
+    <% }%>
     <asp:GridView runat="server" ID="dvgArticulos" CssClass="table table-dark table-bordered text-center" AutoGenerateColumns="false"
         OnSelectedIndexChanged="dvgArticulos_SelectedIndexChanged" DataKeyNames="Id">
         <Columns>
