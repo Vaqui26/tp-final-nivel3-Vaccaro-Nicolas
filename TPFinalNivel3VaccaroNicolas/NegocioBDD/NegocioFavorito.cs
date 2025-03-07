@@ -109,5 +109,27 @@ namespace NegocioBDD
                 accesoDatos.cerrarConexion();
             }
         }
+        public void borrarFavorito(int idUser, int idArticulo)
+        {
+            ManejoBDD accesoDatos = new ManejoBDD();
+            try
+            {
+                accesoDatos.setearConsulta("Delete From FAVORITOS where IdUser = @idUser and IdArticulo = @idArticulo;");
+                accesoDatos.setearParametros("@idUser", idUser);
+                accesoDatos.setearParametros("@idArticulo", idArticulo);
+
+                accesoDatos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+        }
+
     }
 }
