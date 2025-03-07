@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\tpfinalnivel3vaccaronicolas\\favoritos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\favoritos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\tpfinalnivel3vaccaronicolas\\listaarticulos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\listaarticulos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF9A38F4-4777-4D0F-891A-47476F477BF9}|NegocioBDD\\NegocioBDD.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\negociobdd\\negociofavorito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\tpfinalnivel3vaccaronicolas\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF9A38F4-4777-4D0F-891A-47476F477BF9}|NegocioBDD\\NegocioBDD.csproj|C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\negociobdd\\negociofavorito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF9A38F4-4777-4D0F-891A-47476F477BF9}|NegocioBDD\\NegocioBDD.csproj|solutionrelative:negociobdd\\negociofavorito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\tpfinalnivel3vaccaronicolas\\favoritos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\favoritos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NegocioFavorito.cs",
-              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\NegocioBDD\\NegocioFavorito.cs",
-              "RelativeDocumentMoniker": "NegocioBDD\\NegocioFavorito.cs",
-              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\NegocioBDD\\NegocioFavorito.cs",
-              "RelativeToolTip": "NegocioBDD\\NegocioFavorito.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wIQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T03:16:35.908Z",
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Site.Master",
+              "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\Site.Master",
+              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Site.Master",
+              "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-07T03:22:09.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Favoritos.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Favoritos.aspx.cs",
-              "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\Favoritos.aspx.cs",
-              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Favoritos.aspx.cs",
-              "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\Favoritos.aspx.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAwwCkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T01:29:48.862Z",
+              "Title": "ListaArticulos.aspx",
+              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\ListaArticulos.aspx",
+              "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\ListaArticulos.aspx",
+              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\ListaArticulos.aspx",
+              "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\ListaArticulos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-07T03:21:36.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Favoritos.aspx",
-              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Favoritos.aspx",
-              "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\Favoritos.aspx",
-              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Favoritos.aspx",
-              "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\Favoritos.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-07T01:22:36.126Z",
+              "Title": "NegocioFavorito.cs",
+              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\NegocioBDD\\NegocioFavorito.cs",
+              "RelativeDocumentMoniker": "NegocioBDD\\NegocioFavorito.cs",
+              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\NegocioBDD\\NegocioFavorito.cs",
+              "RelativeToolTip": "NegocioBDD\\NegocioFavorito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T03:16:35.908Z",
               "EditorCaption": ""
             }
           ]
