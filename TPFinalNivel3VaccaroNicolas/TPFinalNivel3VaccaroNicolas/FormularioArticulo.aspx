@@ -1,6 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormularioArticulo.aspx.cs" Inherits="TPFinalNivel3VaccaroNicolas.FormularioArticulo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+    <style>
+        .validator {
+            color: red;
+            font-size: 15px;
+            font-weight: 500;
+            padding-left: 4px;
+        }
+    </style>
+
     <asp:ScriptManager runat="server" ID="scriptManager1"></asp:ScriptManager>
 
     <asp:Label runat="server" ID="lblTitulo" CssClass="h2"></asp:Label>
@@ -64,7 +74,7 @@
             <div class="mb-3">
                 <label for="txtDescripcion" class="form-label">Descripcion</label>
                 <asp:TextBox runat="server" ID="txtDescripcion" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
-                <!-- Agregar validacion para el campo Descripcion -->
+                <asp:Label runat="server" ID="lblError" CssClass="validator" Text=""></asp:Label>
             </div>
         </div>
     </div>

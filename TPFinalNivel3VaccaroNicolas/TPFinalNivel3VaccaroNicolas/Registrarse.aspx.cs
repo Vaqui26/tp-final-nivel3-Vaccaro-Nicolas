@@ -18,6 +18,9 @@ namespace TPFinalNivel3VaccaroNicolas
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
+            if (!Page.IsValid)
+                return;
+
             try
             {
                 NegocioUsers negocio = new NegocioUsers();
