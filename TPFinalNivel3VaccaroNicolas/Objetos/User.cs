@@ -24,5 +24,6 @@ namespace Objetos
             this.Pass = pass;
             this.Admin = false;
         }   
+        public User() { }
     }
 }

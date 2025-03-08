@@ -93,5 +93,42 @@ namespace NegocioBDD
 				accesoDatos.cerrarConexion();
 			}
 		}
+
+		public List<User> listaUsuarios(int id)
+		{
+			ManejoBDD accesoDatos = new ManejoBDD();
+			List<User> lista = new List<User>();
+			try
+			{
+				accesoDatos.setearConsulta("Select id, email, nombre, apellido, admin From USERS where id != @id;");
+				accesoDatos.setearParametros("@id", id);
+				accesoDatos.ejecutarLectura();
+
+                while(accesoDatos.Lector.Read())
+                {
+					User user = new User();
+                    user.Id = int.Parse(accesoDatos.Lector["Id"].ToString());
+					user.Email = accesoDatos.Lector["email"].ToString();
+                    if (!(accesoDatos.Lector["nombre"] is DBNull))
+                        user.Nombre = (string)accesoDatos.Lector["nombre"];
+                    if (!(accesoDatos.Lector["apellido"] is DBNull))
+                        user.Apellido = (string)accesoDatos.Lector["apellido"];
+                    user.Admin = bool.Parse(accesoDatos.Lector["admin"].ToString());
+
+					lista.Add(user);	
+                }
+
+				return lista;
+            }
+			catch (Exception ex)
+			{
+
+				throw ex;
+			}
+			finally
+			{
+				accesoDatos.cerrarConexion();
+			}
+		}
 	}
 }

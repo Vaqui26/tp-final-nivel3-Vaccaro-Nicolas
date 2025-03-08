@@ -64,6 +64,7 @@
             <div class="mb-3">
                 <label for="txtDescripcion" class="form-label">Descripcion</label>
                 <asp:TextBox runat="server" ID="txtDescripcion" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
+                <!-- Agregar validacion para el campo Descripcion -->
             </div>
         </div>
     </div>

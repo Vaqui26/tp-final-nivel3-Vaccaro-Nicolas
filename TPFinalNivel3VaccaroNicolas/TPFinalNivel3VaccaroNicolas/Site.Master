@@ -28,6 +28,7 @@
                         <%if (NegocioBDD.Seguridad.esAdmin(Session["user"]))
                             {%>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/ListaArticulos">Lista de Articulos</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Usuarios">Lista de Usuarios</a></li>
                         <%}%>
                     </ul>
                 </div>

@@ -78,10 +78,11 @@
         <asp:Repeater ID="repRepetidor" runat="server">
             <ItemTemplate>
                 <div class="col">
-                    <div class="card">
-                        <img src="<%# Eval("UrlImagen")%>" class="card-img-top" alt="articulo.png" onerror="this.src='<%: this.ImagenNoEncontrada %>';" style="height: 414px">
+                    <div class="card mb-3 text-bg-dark">
+                        <img src="<%# Eval("UrlImagen")%>" class="card-img-top bg-white" alt="articulo.png" onerror="this.src='<%: this.ImagenNoEncontrada %>';" style="height: 414px">
                         <div class="card-body">
                             <h5 class="card-title"><%# Eval("Nombre")%></h5>
+                            <hr />
                             <p class="card-text"><%# Eval("Descripcion")%></p>
                             <asp:Button runat="server" ID="btnInfo" Text="Informacion del Articulo" CommandArgument='<%#Eval("Id")%>' CommandName="ArticuloId"
                                 CssClass="btn btn-primary" OnClick="btnInfo_Click" />
