@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF9A38F4-4777-4D0F-891A-47476F477BF9}|NegocioBDD\\NegocioBDD.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\negociobdd\\manejobdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EF9A38F4-4777-4D0F-891A-47476F477BF9}|NegocioBDD\\NegocioBDD.csproj|C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\negociobdd\\manejobdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF9A38F4-4777-4D0F-891A-47476F477BF9}|NegocioBDD\\NegocioBDD.csproj|solutionrelative:negociobdd\\manejobdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,8 +34,7 @@
               "RelativeToolTip": "NegocioBDD\\ManejoBDD.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T14:39:49.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T14:39:49.646Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\Web.config",
               "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Web.config",
               "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-03-11T14:29:18.081Z",
               "EditorCaption": ""
