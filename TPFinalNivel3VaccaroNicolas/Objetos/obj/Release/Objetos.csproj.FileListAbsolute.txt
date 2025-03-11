@@ -1,0 +1,6 @@
+C:\Users\Vaqui\source\repos\tp-final-nivel3-Vaccaro-Nicolas\TPFinalNivel3VaccaroNicolas\Objetos\bin\Release\Objetos.dll
+C:\Users\Vaqui\source\repos\tp-final-nivel3-Vaccaro-Nicolas\TPFinalNivel3VaccaroNicolas\Objetos\bin\Release\Objetos.pdb
+C:\Users\Vaqui\source\repos\tp-final-nivel3-Vaccaro-Nicolas\TPFinalNivel3VaccaroNicolas\Objetos\obj\Release\Objetos.csproj.AssemblyReference.cache
+C:\Users\Vaqui\source\repos\tp-final-nivel3-Vaccaro-Nicolas\TPFinalNivel3VaccaroNicolas\Objetos\obj\Release\Objetos.csproj.CoreCompileInputs.cache
+C:\Users\Vaqui\source\repos\tp-final-nivel3-Vaccaro-Nicolas\TPFinalNivel3VaccaroNicolas\Objetos\obj\Release\Objetos.dll
+C:\Users\Vaqui\source\repos\tp-final-nivel3-Vaccaro-Nicolas\TPFinalNivel3VaccaroNicolas\Objetos\obj\Release\Objetos.pdb

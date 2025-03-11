@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\tpfinalnivel3vaccaronicolas\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF9A38F4-4777-4D0F-891A-47476F477BF9}|NegocioBDD\\NegocioBDD.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\negociobdd\\manejobdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF9A38F4-4777-4D0F-891A-47476F477BF9}|NegocioBDD\\NegocioBDD.csproj|solutionrelative:negociobdd\\manejobdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManejoBDD.cs",
+              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\NegocioBDD\\ManejoBDD.cs",
+              "RelativeDocumentMoniker": "NegocioBDD\\ManejoBDD.cs",
+              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\NegocioBDD\\ManejoBDD.cs",
+              "RelativeToolTip": "NegocioBDD\\ManejoBDD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:39:49.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Web.config",
+              "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\Web.config",
+              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Web.config",
+              "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-11T14:29:18.081Z",
+              "EditorCaption": ""
             }
           ]
         }
