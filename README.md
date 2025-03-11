@@ -10,9 +10,9 @@ En caso de que lo quieras correr de manera local, deberas tener los siguientes p
 Debera tener instalado el `Visual Studio Community`. Es programa lo podra bajar en el siguiente link : https://visualstudio.microsoft.com/es/downloads/ . Y ademas necesita tener instalada la base de datos `SQL Server` 
 en el siguiente link : https://www.microsoft.com/es-es/sql-server/sql-server-downloads . En ambos programas es recomendable la version gratuita ya que es un proyecto sencillo. 
 Ademas en el visual debera instalar las siguientes herramientas para poder correr sin problemas la aplicacion web. En la siguiente `imagen` se muestran cuales herramientas debe instalar. 
-
-<img src="ImageInfoReadMe/Herramientas-NET.png">
-
+<p align="center">
+<img src="./ImagesInfoReadMe/Herramientas-NET.png" alt="herramientas.NET" >
+</p>
 Por ultimo debera bajar el proyecto desde git con la siguiente linea en su `git bash` :
 
 `git clone https://github.com/Vaqui26/tp-final-nivel3-Vaccaro-Nicolas.git`
@@ -22,13 +22,15 @@ Una vez clonado el repo, ingrese a la carpeta y ejecute el archivo con el nombre
 `TPFinalNivel3VaccaroNicolas.sln`
 
 Este le abrira el visual `Visual Studio Community` y teniendo ya la BDD, dentro de la biblioteca `NegocioBDD` encontra una carpeta llamada `script_db`. En esta ultima se encuentra un archivo que contiene la creacion de la base de datos con sus tablas para poder interacturar con ella.
-
-<img src="ScriptBD.png">
-
+<p align="center">
+<img src="./ImagesInfoReadMe/ScriptBD.png" alt="scriptBD">
+</p>
 Simplemente abra `SQL Server` una vez entre eleji `New query` y pege el contenido del archivo, ejecute y vera la base de datos ya creada con sus tablas. 
 
 Finalmente podra ejecutar la aplicacion en el visual donde figura `IIS Express`. 
-<img src="CorrerAplicacion"> 
+<p align="center">
+<img src="./ImagesInfoReadMe/CorrerAplicacion.png" alt="correrAplicacion"> 
+</p>
 Este le abrira su navegador predeterminado y ya podra interactuar con la app. 
 
 
