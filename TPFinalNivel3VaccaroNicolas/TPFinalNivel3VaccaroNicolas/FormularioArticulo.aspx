@@ -20,14 +20,17 @@
             <div class="mb-3">
                 <label for="txtCodigo" class="form-label">Codigo</label>
                 <asp:TextBox runat="server" ID="txtCodigo" CssClass="form-control"></asp:TextBox>
+                <asp:RequiredFieldValidator ErrorMessage="Debe Completar este Campo!!" ControlToValidate="txtCodigo" runat="server" CssClass="validator"/>
             </div>
             <div class="mb-3">
                 <label for="txtNombre" class="form-label">Nombre</label>
                 <asp:TextBox runat="server" ID="txtNombre" CssClass="form-control"></asp:TextBox>
+                <asp:RequiredFieldValidator ErrorMessage="Debe Completar este Campo!!" ControlToValidate="txtNombre" runat="server" CssClass="validator"/>
             </div>
             <div class="mb-3">
                 <label for="txtCodigo" class="form-label">Precio</label>
                 <asp:TextBox runat="server" ID="txtPrecio" CssClass="form-control"></asp:TextBox>
+                <asp:RequiredFieldValidator ErrorMessage="Debe Completar este Campo!!" ControlToValidate="txtPrecio" runat="server" CssClass="validator"/>
             </div>
             <div class="row">
                 <div class="col">

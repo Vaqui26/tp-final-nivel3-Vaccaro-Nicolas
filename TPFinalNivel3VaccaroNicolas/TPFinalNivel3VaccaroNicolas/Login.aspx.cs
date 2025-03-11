@@ -18,10 +18,12 @@ namespace TPFinalNivel3VaccaroNicolas
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
+            if (!Page.IsValid)
+                return;
             try
             {
                 NegocioUsers negocio = new NegocioUsers();
-                User user = new User(txtEmail.Text,txtPass.Text);
+                User user = new User(txtEmail.Text, txtPass.Text);
                 if (negocio.loginUser(user))
                 {
                     Session.Add("user", user);

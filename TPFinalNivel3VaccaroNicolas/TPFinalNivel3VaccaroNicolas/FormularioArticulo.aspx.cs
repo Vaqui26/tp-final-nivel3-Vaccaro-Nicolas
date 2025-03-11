@@ -102,7 +102,10 @@ namespace TPFinalNivel3VaccaroNicolas
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            if(txtDescripcion.Text.Length > 150)
+            if (!Page.IsValid)
+                return;
+
+            if (txtDescripcion.Text.Length > 150)
             {
                 lblError.Text = "La descripcion debe tener menos de 150 caracteres!";
                 return;
