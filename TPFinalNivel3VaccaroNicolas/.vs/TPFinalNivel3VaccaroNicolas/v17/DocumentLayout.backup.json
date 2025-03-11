@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\tpfinalnivel3vaccaronicolas\\formularioarticulo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\formularioarticulo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\tpfinalnivel3vaccaronicolas\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\tpfinalnivel3vaccaronicolas\\formularioarticulo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{65624178-8439-4374-AD13-6D084C6FC66B}|TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas.csproj|solutionrelative:tpfinalnivel3vaccaronicolas\\formularioarticulo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{EF9A38F4-4777-4D0F-891A-47476F477BF9}|NegocioBDD\\NegocioBDD.csproj|c:\\users\\vaqui\\source\\repos\\tp-final-nivel3-vaccaro-nicolas\\tpfinalnivel3vaccaronicolas\\negociobdd\\manejobdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF9A38F4-4777-4D0F-891A-47476F477BF9}|NegocioBDD\\NegocioBDD.csproj|solutionrelative:negociobdd\\manejobdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormularioArticulo.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\FormularioArticulo.aspx.cs",
-              "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\FormularioArticulo.aspx.cs",
-              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\FormularioArticulo.aspx.cs",
-              "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\FormularioArticulo.aspx.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAuwGoAAAAAAAAAAAAAAA==",
+              "Title": "ManejoBDD.cs",
+              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\NegocioBDD\\ManejoBDD.cs",
+              "RelativeDocumentMoniker": "NegocioBDD\\ManejoBDD.cs",
+              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\NegocioBDD\\ManejoBDD.cs",
+              "RelativeToolTip": "NegocioBDD\\ManejoBDD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T12:40:14.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.aspx",
-              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Login.aspx",
-              "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\Login.aspx",
-              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\Login.aspx",
-              "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\Login.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-11T12:38:26.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormularioArticulo.aspx",
-              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\FormularioArticulo.aspx",
-              "RelativeDocumentMoniker": "TPFinalNivel3VaccaroNicolas\\FormularioArticulo.aspx",
-              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\tp-final-nivel3-Vaccaro-Nicolas\\TPFinalNivel3VaccaroNicolas\\TPFinalNivel3VaccaroNicolas\\FormularioArticulo.aspx",
-              "RelativeToolTip": "TPFinalNivel3VaccaroNicolas\\FormularioArticulo.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-11T12:37:56.357Z",
+              "WhenOpened": "2025-03-11T13:45:15.054Z",
               "EditorCaption": ""
             }
           ]
